@@ -21,7 +21,7 @@ const templatePage = (id,name,img,title)=>{
   let node = document.createElement('div')
   node.id = id
   node.addEventListener('click',function(){
-      window.location = `/news.html?${id}`
+      window.location = `./news.html?${id}`
   })
   node.innerHTML =
   `
