@@ -22,5 +22,5 @@ submit.addEventListener('click',(event)=>{
         "title":title,
         "url":url
       }
-    postNews(newsPostDataFormat(data)).then(()=>{ window.location = '/' })
+    postNews(newsPostDataFormat(data)).then(()=>{ window.location = './' })
 })
