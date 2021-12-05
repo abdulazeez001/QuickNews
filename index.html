@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Quick News</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Quick News</h1>
+        </div>
+        <div class="user">
+            <p>Abdulazeez Shittu</p>
+            <img src='./assets/images/userImageIcon.png' alt="user avatar">
+        </div>
+    </header>
+    <main>
+        <div class="form-field">
+            <div class="search">
+                <img src="./assets/images/searchIcon.svg" alt="">
+                <input type="text" placeholder="Search for News by title" value='' id="search">
+            </div>
+            <a href="addnews.html" class="align">
+                <button class="dark-btn block" >Add news</button>
+            </a>
+            <!-- <button class="dark-btn" >Add news</button> -->
+        </div>
+
+        <div id="newsList">
+            <div class="preload">
+                <h2>Loading</h2>
+            </div>
+        </div>
+        <div class="control">
+            <button class="control-btn">
+                <img src='./assets/images/prevIcon.svg' alt="prev button">
+                <p >Prev</p>
+            </button>
+            <ul>
+                <li data-page = '1' class="active">1</li>
+                <li data-page = '2' >2</li>
+                <li data-page = '3'>3</li>
+                <li data-page = '4'>4</li>
+                <li data-page = '5'>5</li>
+                <li data-page = '6'>6</li>
+                <li data-page = '7'>7</li>
+                <li data-page = '8'>8</li>
+            </ul>
+            <button class="control-btn">
+                <p >Next</p>
+                <img src='./assets/images/nextIcon.svg' alt="next button">
+            </button>
+        </div>
+    </main>
+    <footer>
+        
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/utils/helpers.js"></script>
+    <script src="./scripts/repository/index.js"></script>
+    <script defer src="./scripts/index.js"></script>
+</body>
+</html>

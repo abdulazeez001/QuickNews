@@ -1,0 +1,309 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(250, 249, 249);
+}
+ul{
+    list-style: none;
+}
+li,
+button,
+input[type='submit']{
+  cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.align{
+    text-align: right;
+}
+.form-field{
+    display: flex;
+}
+.block{
+    height:100%;
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 5px 5px lightgrey;
+}
+
+.search{
+    position: relative;
+}
+
+.search input{
+    padding: 0 1.5rem;
+    height: 100%;
+    width: max(calc(100% - 3rem),100px);
+    background-color: rgb(235, 232, 232);
+    border: 1px solid lightgray;
+    border-radius: .5rem;
+}
+.search img{
+    position: absolute;
+    top: 25%;
+    left:  5px;
+}
+
+.title{
+    color: blue;
+    font-family: monospace;
+    font-weight: 400;
+}
+.name{
+    font-family: sans-serif;
+    font-weight: 400;
+    color: ;
+}
+main{
+    width:60%;
+    margin: 5rem auto;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+main > div:first-child{
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+main > div:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+.control li{
+    font-size: .8rem;
+    padding: .2rem .5rem;
+    border: 1px solid lightgrey;
+    border-radius: .2rem;
+   background-color: rgb(250, 249, 249);
+   display: inline-block;
+}
+.logo h1{
+    font-size: 2.5rem;
+    color: darkblue;
+    font-family: 'cursive';
+    font-style: italic;
+    text-decoration: underline;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user p{
+    margin-right:1rem;
+}
+.control {
+    margin-top: 1rem;
+}
+.control-btn{
+    display: flex;
+    gap: .5rem;
+    background-color: rgb(250, 249, 249);
+    padding: .4rem;
+    border: 1px solid lightgrey;
+    border-radius: .5rem;
+}
+
+.control .active{
+    background-color: rgb(175, 175, 240);
+    position: relative;
+}
+.active::after{
+    content: ' ';
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background-color: darkblue;
+    left: 0;
+    bottom: -50%;
+
+}
+.dark-btn{
+    background-color: darkblue;
+    color: white;
+    padding:.5em 4em;
+    border:  1px solid darkblue;
+    border-radius: .5rem;
+    font-weight: 600;
+}
+
+#newsList > div{
+    min-height: calc(50px + 1rem);
+    cursor: pointer;
+    display: flex;
+    /* gap: 10rem; */
+    flex-wrap: wrap;
+    background-color: rgb(247, 243, 243);
+    align-items: center;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid grey;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+#newsList > div:hover{
+    box-shadow: 0 2px 5px grey,
+                0 -2px 5px grey;
+}
+#newsList p{
+    font-size: .9rem;
+}
+#newsList img{
+    font-size: .8rem;
+    color: grey;
+    border-radius: 1rem;
+    margin-right:.5rem;
+}
+#newsList .author{
+    display: flex;
+    align-items: center;
+}
+
+#newsList .preload{
+    background-color: white;
+    width: 100%;
+    border: 0;
+   
+}
+
+#search{
+    height:2.5rem;
+}
+
+/* NEWS PAGE STYLE */
+
+#main-news{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#main-news h1{
+    color: saddlebrown;
+}
+#main-news img{
+    padding-bottom: .5rem;
+    font-size: .8rem;
+    color: grey;
+    border-radius: 100%;
+}
+#main-news .text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1rem;
+    text-align: left;
+}
+.cmt-text{
+    margin-bottom: 1rem;
+}
+#comments{
+    flex-direction: column;
+}
+#comments img{
+    width:30px;
+    border-radius: 100%;
+}
+#comments > div{
+    background-color: rgb(247, 243, 243);
+    margin-bottom: 1rem ;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px dashed grey;
+
+}
+#comments .author{
+    margin-bottom:.2rem;
+    font-size:.8rem;
+    display: flex;
+    align-items: center;  
+    gap:.5rem;
+}
+#comments .title{
+    font-size: 1rem;
+}
+
+#comments .preload{
+    background-color: white;
+    width: 50%;
+    border: 0;
+    position: relative;
+    left: 25%;
+    color: grey;
+    text-align: center;
+    border: 1px dashed grey;
+    padding: 1em;
+    font-size: 1rem;
+}
+.comments-search{
+    display: flex;
+    height:2.5rem;
+    justify-content: space-between;
+    gap: 1em;
+    margin: 1rem 2% 1rem;
+}
+.edit-btn{
+    margin-top: .5rem;
+}
+.edit{
+   background-color: darkblue;
+   padding: .5em 2em;
+   border: 1px solid darkblue;
+}
+.delete{
+    background-color: black;
+    padding: .5em 2em;
+    border: 1px solid black;
+}
+.edit-input{
+    display: none;
+    margin: 1rem 0;
+}
+/* .fixed{
+
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+} */
+
+form{
+    padding: 2rem;
+    margin: auto;
+    width: 50%;
+    border: 2px solid darkblue;
+    border-radius: 1rem;
+    
+}
+form >div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    
+}
+.news-form{
+    padding: 2rem;
+}
+
+.news-form h1{
+    color: darkgoldenrod;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.news-form label{
+    font-size: .8rem;
+    font-weight: bold;
+    color: gray;
+}

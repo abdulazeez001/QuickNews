@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Quick News</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Quick News</h1>
+        </div>
+        <div class="user">
+            <p>Abdulazeez Shittu</p>
+            <img src='./assets/images/userImageIcon.png' alt="user avatar">
+        </div>
+    </header>
+    <main>
+        <div class="main-news" id="main-news">
+            <div class="preload">
+                <h2>Loading</h2>
+            </div>
+        </div>
+        <h2 class="cmt-text">Comments</h2>
+        <section class="comments-search search fixed">
+            <input type="text" placeholder="Add a comment" value='' id="input-comment">
+            <button class="dark-btn" id="post-comment">Post</button>
+        </section>
+        <div class="comments" id="comments">
+            
+        </div>
+        
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/utils/helpers.js"></script>
+    <script src="./scripts/repository/index.js"></script>
+    <script defer src="./scripts/news.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Quick News</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <h1>Quick News</h1>
+            </a>
+            
+        </div>
+        <div class="user">
+            <p>Abdulazeez Shittu</p>
+            <img src='./assets/images/userImageIcon.png' alt="user avatar">
+        </div>
+    </header>
+    <main class="news-form">
+        <h1>Post your news</h1>
+        <form>
+            <div>
+                <label for="author_name">Author</label>
+                <input type="text" id="author_name" placeholder="Shittu Abdulazeez" value="">
+            </div>
+            <div>
+                <label for="author_img">Avatar</label>
+                <input type="text" id="author_img" placeholder="https://www.jpeg.com" value="">
+            </div>
+            <div>
+                <label for="news_title">Title</label>
+                <input type="text" id="news_title" placeholder="Winter is Coming !!!" value="">
+            </div>
+            <div>
+                <label for="news_url">News Link</label>
+                <input type="text" id="news_url" placeholder="https://www.news.com" value="">
+            </div>
+            <div>
+                <input type="submit" class='dark-btn' id="submit" value="Post">
+            </div>
+        </form>
+    </main>
+    <footer>
+        
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/utils/helpers.js"></script>
+    <script src="./scripts/repository/index.js"></script>
+    <script defer src="./scripts/addnews.js"></script>
+</body>
+</html>
